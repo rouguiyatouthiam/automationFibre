@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FibreNonEligibleSuite">
+
+	
+	<parameter name="appUrl" value="https://www.orange.sn/test-fibre" />
+	<parameter name="telephone" value="338421111" />
+	<parameter name="prenom" value="Fama" />
+	<parameter name="nom" value="Ba" />
+	<parameter name="email" value="test@yahoo.fr" />
+	<parameter name="tel" value="704444419" />
+	<parameter name="navigateur" value="firefox" />
+	
+	
+	<test thread-count="5" name="FibreNonEligible">
+		<classes>
+			<class name="sn.orange.sonatel.pole.digital.testcase.FibreB2CTelephoneNonEligibleTestCase"/>
+		</classes>
+	</test>
+</suite>

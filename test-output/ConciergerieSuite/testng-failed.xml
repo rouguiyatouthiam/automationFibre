@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ConciergerieSuite]">
+  <parameter name="password" value="MYdigital1"/>
+  <parameter name="Type" value="Contact"/>
+  <parameter name="pageConnexionTitle" value="Connexion"/>
+  <parameter name="rechercher" value="Test"/>
+  <parameter name="description" value="Test Test Test"/>
+  <parameter name="appUrl" value="http://conciergerie.rec.orange-sonatel.com/"/>
+  <parameter name="accueilTitle" value="Accueil"/>
+  <parameter name="navigateur" value="chrome"/>
+  <parameter name="appTitle" value="Accueil"/>
+  <parameter name="username" value="thiam028592"/>
+  <parameter name="nom_presta" value="Test"/>
+  <parameter name="Contact" value="338020202"/>
+  <test thread-count="5" name="Conciergerie(failed)">
+    <classes>
+      <class name="sn.orange.sonatel.pole.digital.testcase.ConciergerieTestCase">
+        <methods>
+          <include name="ajouterPrestataire"/>
+          <include name="setup"/>
+          <include name="authentification"/>
+          <include name="browserClose"/>
+          <include name="supprimerPrestataire"/>
+          <include name="choisirCategorie"/>
+          <include name="seDeconnecter" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- sn.orange.sonatel.pole.digital.testcase.ConciergerieTestCase -->
+    </classes>
+  </test> <!-- Conciergerie(failed) -->
+</suite> <!-- Failed suite [ConciergerieSuite] -->

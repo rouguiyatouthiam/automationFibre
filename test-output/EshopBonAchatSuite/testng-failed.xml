@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EshopBonAchatSuite]">
+  <parameter name="password" value="Passer"/>
+  <parameter name="ville" value="Dakar"/>
+  <parameter name="bonAchat" value="12345"/>
+  <parameter name="commune" value="Rufisque"/>
+  <parameter name="communeFacture" value="Pikine"/>
+  <parameter name="adresse" value="Test"/>
+  <parameter name="adresseFacture" value="TestFacture"/>
+  <parameter name="appUrl" value="http://eshopb2c.rec.orange-sonatel.com/"/>
+  <parameter name="navigateur" value="chrome"/>
+  <parameter name="appTitle" value="Accueil | ESHOPB2C"/>
+  <parameter name="villeFacture" value="Dakar"/>
+  <parameter name="username" value="rt@yahoo.fr"/>
+  <test thread-count="5" name="Eshop(failed)">
+    <classes>
+      <class name="sn.orange.sonatel.pole.digital.testcase.EshopTestCaseBonDachat">
+        <methods>
+          <include name="ajouterProduits"/>
+          <include name="authentication"/>
+          <include name="Recapitulatif"/>
+          <include name="setup"/>
+          <include name="browserClose"/>
+          <include name="livraison"/>
+          <include name="validerPanier"/>
+          <include name="accueil"/>
+        </methods>
+      </class> <!-- sn.orange.sonatel.pole.digital.testcase.EshopTestCaseBonDachat -->
+    </classes>
+  </test> <!-- Eshop(failed) -->
+</suite> <!-- Failed suite [EshopBonAchatSuite] -->

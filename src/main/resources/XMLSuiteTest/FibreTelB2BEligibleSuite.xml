@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FibreB2BTelEligibleSuite">
+
+	
+	<parameter name="appUrl" value="https://www.orange.sn/test-fibre" />
+	<parameter name="telephone" value="338222929" />
+	<parameter name="navigateur" value="firefox" />
+	
+	
+	<test thread-count="5" name="FibreB2BEligible">
+		<classes>
+			<class name="sn.orange.sonatel.pole.digital.testcase.FibreB2BTelEligibleTestCase"/>
+		</classes>
+	</test>
+</suite>

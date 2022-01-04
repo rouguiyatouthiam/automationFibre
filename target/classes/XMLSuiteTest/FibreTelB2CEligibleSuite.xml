@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FibreSuite">
+
+	
+	<parameter name="appUrl" value="https://www.orange.sn/test-fibre" />
+	<parameter name="telephone" value="338256099" />
+	<parameter name="prenom" value="Test Test" />
+	<parameter name="nom" value="Test" />
+	<parameter name="cin" value="2251200012321" />
+	<parameter name="dvalidite" value="01012010" />
+	<parameter name="dexpiration" value="01012020" />
+	<parameter name="email" value="rouguithiam@yahoo.fr" />
+	<parameter name="tel" value="704478718" />
+	<parameter name="adresse" value="cerf volant" />
+	<parameter name="commune" value="bopp" />
+	<parameter name="adresseMap" value="bopp" />
+	<parameter name="navigateur" value="firefox" />
+	
+	
+	<test thread-count="5" name="Fibre">
+		<classes>
+			<class name="sn.orange.sonatel.pole.digital.testcase.FibreB2CTelephoneEligibleTestCase"/>
+		</classes>
+	</test>
+</suite>

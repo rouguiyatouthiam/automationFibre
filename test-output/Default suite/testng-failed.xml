@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="sn.orange.sonatel.pole.digital.testcase.FibreB2BTelEligible_SouscriptionKOTestCase">
+        <methods>
+          <include name="accueil"/>
+          <include name="souscription_email_telephone__errone"/>
+          <include name="souscription_ko"/>
+          <include name="browserClose"/>
+          <include name="souscription_champs_vide"/>
+          <include name="setup"/>
+          <include name="testEligibiliteParTelephone"/>
+        </methods>
+      </class> <!-- sn.orange.sonatel.pole.digital.testcase.FibreB2BTelEligible_SouscriptionKOTestCase -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

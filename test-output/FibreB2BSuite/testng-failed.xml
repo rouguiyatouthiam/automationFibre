@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FibreB2BSuite]">
+  <parameter name="adresseEntreprise" value="3 rue test entreprise"/>
+  <parameter name="nomEntreprise" value="Test B2B"/>
+  <parameter name="appUrl" value="https://www.orange.sn/test-fibre"/>
+  <parameter name="navigateur" value="firefox"/>
+  <parameter name="nom" value="Test"/>
+  <parameter name="ninea" value="Test332211"/>
+  <parameter name="enteteRegistre" value="//Users//rougui//ProjetAutomatisationFibre//src//main//resources//Files//course.jpg"/>
+  <parameter name="entete" value="//Users//rougui//ProjetAutomatisationFibre//src//main//resources//Files//course.jpg"/>
+  <parameter name="adresse" value="Plateau, Dakar, Sénégal"/>
+  <parameter name="tel" value="774478718"/>
+  <parameter name="prenom" value="Test Test Test"/>
+  <parameter name="email" value="ext_rokhayatou.thiam@orange-sonatel.com"/>
+  <parameter name="cni" value="//Users//rougui//ProjetAutomatisationFibre//src//main//resources//Files//course.jpg"/>
+  <test thread-count="5" name="FibreB2B(failed)">
+    <classes>
+      <class name="sn.orange.sonatel.pole.digital.testcase.FibreB2BTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="browserClose"/>
+          <include name="souscription" invocation-numbers="0"/>
+          <include name="accueil"/>
+          <include name="testEligibiliteParGPS"/>
+        </methods>
+      </class> <!-- sn.orange.sonatel.pole.digital.testcase.FibreB2BTestCase -->
+    </classes>
+  </test> <!-- FibreB2B(failed) -->
+</suite> <!-- Failed suite [FibreB2BSuite] -->

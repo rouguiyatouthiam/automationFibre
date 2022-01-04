@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FibreSuite]">
+  <parameter name="dvalidite" value="01012010"/>
+  <parameter name="commune" value="bopp"/>
+  <parameter name="adresseMap" value="bopp"/>
+  <parameter name="cin" value="2251200012321"/>
+  <parameter name="appUrl" value="https://www.orange.sn/test-fibre"/>
+  <parameter name="telephone" value="338256099"/>
+  <parameter name="navigateur" value="firefox"/>
+  <parameter name="nom" value=""/>
+  <parameter name="dexpiration" value="01012020"/>
+  <parameter name="adresse" value="cerf volant"/>
+  <parameter name="tel" value="704478718"/>
+  <parameter name="prenom" value="Test Test"/>
+  <parameter name="email" value="rouguithiam@yahoo.fr"/>
+  <test thread-count="5" name="Fibre(failed)">
+    <classes>
+      <class name="sn.orange.sonatel.pole.digital.testcase.FibreB2CTelephoneEligibleTestCase">
+        <methods>
+          <include name="accueil"/>
+          <include name="testEligibiliteParTelephone"/>
+          <include name="browserClose"/>
+          <include name="souscription" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="confirmationSouscription"/>
+        </methods>
+      </class> <!-- sn.orange.sonatel.pole.digital.testcase.FibreB2CTelephoneEligibleTestCase -->
+    </classes>
+  </test> <!-- Fibre(failed) -->
+</suite> <!-- Failed suite [FibreSuite] -->

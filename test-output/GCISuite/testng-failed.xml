@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GCISuite]">
+  <parameter name="password" value="Rougui@T19"/>
+  <parameter name="declarationPageTitle" value="Liste des questionnaires déjà soumis"/>
+  <parameter name="appUrl" value="http://gestion-conflits.dev.orange-sonatel.com"/>
+  <parameter name="navigateur" value="chrome"/>
+  <parameter name="pageConnexion" value="Log in to karanguee"/>
+  <parameter name="username" value="ext_rokhayatou.thiam@orange-sonatel.com"/>
+  <test thread-count="5" name="GCI(failed)">
+    <classes>
+      <class name="sn.orange.sonatel.pole.digital.testcase.GCITestCase">
+        <methods>
+          <include name="browserClose"/>
+          <include name="deconnexion"/>
+          <include name="Declaration"/>
+          <include name="setup"/>
+          <include name="Questionnaire"/>
+          <include name="authentification" invocation-numbers="0"/>
+          <include name="exporter"/>
+        </methods>
+      </class> <!-- sn.orange.sonatel.pole.digital.testcase.GCITestCase -->
+    </classes>
+  </test> <!-- GCI(failed) -->
+</suite> <!-- Failed suite [GCISuite] -->
